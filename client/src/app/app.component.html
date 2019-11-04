@@ -1,2 +1,5 @@
+<h1>Notes</h1>
 <app-note *ngFor="let note of noteService.notes$ | async; trackBy: notesTrackBy" [note]="note"></app-note>
+<hr>
+<h3>Add a note</h3>
 <app-note-editor></app-note-editor>

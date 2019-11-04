@@ -1,6 +1,6 @@
-<form [formGroup]="noteForm" (ngSubmit)="addNote()">
+<form [formGroup]="noteForm" (ngSubmit)="addNote()" class="note form">
     <input type="text" id="title" formControlName="title" placeholder="Title" />
-    <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert alert-danger">
+    <div *ngIf="title.invalid && (title.dirty || title.touched)" class="error">
         <div *ngIf="title.errors.required">
             Title is required.
         </div>
@@ -9,7 +9,7 @@
         </div>
     </div>
     <textarea id="body" formControlName="body" placeholder="Note"></textarea>
-    <div *ngIf="body.invalid && (body.dirty || body.touched)" class="alert alert-danger">
+    <div *ngIf="body.invalid && (body.dirty || body.touched)" class="error">
         <div *ngIf="body.errors.required">
             Note Body is required.
         </div>

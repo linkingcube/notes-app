@@ -1,0 +1,14 @@
+.form.note {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    max-width: 30vw;
+    .error {
+        font-size: 1em;
+        color: red;
+    }
+    textarea,
+    input {
+        padding: 5px 0px;
+    }
+}
