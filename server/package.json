@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jasmine-ts",
-    "build": "tsoa routes"
+    "build": "tsoa routes",
+    "start": "npm run build && ts-node src/server"
   },
   "author": "Bashar Alhalees",
   "license": "ISC",
