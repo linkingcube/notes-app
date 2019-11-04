@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "lib": [
+            "esnext"
+        ],
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "target": "es6"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
