@@ -1,1 +1,23 @@
-<p>note-editor works!</p>
+<form [formGroup]="noteForm" (ngSubmit)="addNote()">
+    <input type="text" id="title" formControlName="title" placeholder="Title" />
+    <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert alert-danger">
+        <div *ngIf="title.errors.required">
+            Title is required.
+        </div>
+        <div *ngIf="title.errors.maxlength">
+            Title must be maximum of {{titleMaxLength}} characters long.
+        </div>
+    </div>
+    <textarea id="body" formControlName="body" placeholder="Note"></textarea>
+    <div *ngIf="body.invalid && (body.dirty || body.touched)" class="alert alert-danger">
+        <div *ngIf="body.errors.required">
+            Note Body is required.
+        </div>
+        <div *ngIf="body.errors.maxlength">
+            Note must be maximum of {{bodyMaxLength}} characters long.
+        </div>
+    </div>
+    <button type="submit" [disabled]="!noteForm.valid">
+        Submit
+    </button>
+</form>

@@ -1,5 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NoteEditorComponent } from './note-editor/note-editor.component';
 import { NoteComponent } from './note/note.component';
@@ -13,6 +14,8 @@ describe('AppComponent', () => {
         NoteEditorComponent
       ],
       imports: [
+        ReactiveFormsModule,
+        FormsModule,
         HttpClientTestingModule
       ]
     }).compileComponents();
