@@ -4,7 +4,7 @@
   "description": "backend for notes app",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jasmine-ts"
   },
   "author": "Bashar Alhalees",
   "license": "ISC",
