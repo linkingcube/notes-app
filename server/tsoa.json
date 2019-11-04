@@ -1,0 +1,16 @@
+{
+    "swagger": {
+        "outputDirectory": ".tsoa-temp",
+        "entryFile": "./src/express.ts",
+        "host": "api.notes-app.com",
+        "name": "Notes App API",
+        "version": "1.0",
+        "basePath": ""
+    },
+    "routes": {
+        "basePath": "/",
+        "entryFile": "./src/express.ts",
+        "routesDir": ".tsoa-temp",
+        "authenticationModule": ""
+    }
+}
