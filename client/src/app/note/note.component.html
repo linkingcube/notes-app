@@ -1,1 +1,10 @@
-<p>note works!</p>
+<div class="note">
+    <h3 class="title">{{note.title}}</h3>
+    <p class="body">{{note.body}}</p>
+    <details>
+        <summary>Info</summary>
+        Created on {{note.createdAt}},
+        <br>
+        Last modified on {{note.updatedAt}}
+    </details>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Note } from './note';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'notes';
+  note:Note = {
+    title: 'note title',
+    body: 'note body',
+    id: 1234,
+    createdAt: 'today', 
+    updatedAt: 'today'
+  }
 }
