@@ -4,7 +4,8 @@
   "description": "backend for notes app",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine-ts"
+    "test": "jasmine-ts",
+    "build": "tsoa routes"
   },
   "author": "Bashar Alhalees",
   "license": "ISC",
