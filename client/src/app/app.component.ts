@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Note } from './note';
+import { NoteService } from './note.service';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,9 @@ import { Note } from './note';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  note:Note = {
-    title: 'note title',
-    body: 'note body',
-    id: 1234,
-    createdAt: 'today', 
-    updatedAt: 'today'
+  constructor(private noteService: NoteService){}
+  
+  public notesTrackBy(i: number, note: Note) {
+    return note.id;
   }
 }

@@ -1,5 +1,7 @@
-import { TestBed, async } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { async, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { NoteEditorComponent } from './note-editor/note-editor.component';
 import { NoteComponent } from './note/note.component';
 
 describe('AppComponent', () => {
@@ -7,8 +9,12 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        NoteComponent
+        NoteComponent,
+        NoteEditorComponent
       ],
+      imports: [
+        HttpClientTestingModule
+      ]
     }).compileComponents();
   }));
 
